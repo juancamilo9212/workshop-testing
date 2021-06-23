@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+.bg-tmdb01 {
+  background-image: url("https://www.themoviedb.org/assets/2/v4/account_pipes/green-79a9507a08a7e5a9b8c643a69026fe46191c45972cb45b944ab4b5f8a9110b03.svg");
+  background-repeat: repeat-y;
+}
+
+.bg-black-fade-down {
+  background-image: linear-gradient(black, transparent);
+}
+
+.bg-black-fade-up {
+  background-image: linear-gradient(transparent, black);
+}
+
+/* Fonts **********************************************************************/
+
+@font-face { /* https://www.icofont.com/icons */
+  font-family: "IcoFont";
+  font-weight: normal;
+  font-style: "Regular";
+  src: url("./fonts/icofont.woff2") format("woff2"), url("./fonts/icofont.woff") format("woff");
+}
+
+[class^="icofont-"], [class*=" icofont-"] {
+  font-family: 'IcoFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.icofont-heart:before {
+  content: "\ef45";
+}
+
+.icofont-book-mark:before {
+  content: "\eec0";
+}
+
+/* Media queries **************************************************************/
+
+.movie-list-poster {
+  width: 120px;
+}
+
+@media (min-width: 640px) {
+  .movie-list-poster {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-list-poster {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-list-poster {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .movie-list-poster {
+    width: 300px;
+  }
+}
+
+.youtube-embedded {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-height: 320px) {
+  .youtube-embedded {
+    height: 75vh;
+  }
+}
+
+/* Tailwind *******************************************************************/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

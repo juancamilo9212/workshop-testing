@@ -1,0 +1,2 @@
+country-names.json taken from http://country.io/names.json
+language-names.json taken from https://github.com/umpirsky/language-list/blob/master/data/en/language.json
